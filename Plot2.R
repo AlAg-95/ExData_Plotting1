@@ -13,6 +13,6 @@ data_subset <- subset(data, Date %in% reference)
 #Create the second plot
 with(data_subset, plot(Time, Global_active_power, type = "l", ylab = "Global Active Power (kilowatts)", xlab = ""))
 #Copy the first plot in a png device
-dev.copy(png, file = "Plot2.png")  
+dev.copy(png, file = "Plot2.png",  height = 480, width = 480)  
 #Close the device
 dev.off()

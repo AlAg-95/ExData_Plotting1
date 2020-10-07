@@ -35,6 +35,6 @@ with(data_subset,
 )
 
 #Copy the first plot in a png device
-dev.copy(png, file = "Plot4.png")  
+dev.copy(png, file = "Plot4.png", height = 480, width = 480)  
 #Close the device
 dev.off()

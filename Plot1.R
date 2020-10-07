@@ -13,5 +13,5 @@ data_subset <- subset(data, Date %in% reference)
 hist(data_subset$Global_active_power, col = "red",
      xlab = "Global Active Power (kilowatts)", main = "Global Active Power")
 #Copy the first plot in a png device
-dev.copy(png, file = "Plot1.png")     
+dev.copy(png, file = "Plot1.png",  height = 480, width = 480)     
 dev.off()
